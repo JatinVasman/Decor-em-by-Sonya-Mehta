@@ -1,0 +1,156 @@
+[
+  {
+    "id": "modern-kitchen-river-oaks",
+    "category": "kitchens",
+    "title": "Modern Kitchen Revival",
+    "location": "River Oaks",
+    "projectType": "Kitchen Remodel",
+    "year": 2024,
+    "duration": "8 weeks",
+    "area": "340 sq.ft",
+    "style": "Modern Luxury",
+    "description": "A complete kitchen transformation with custom cabinetry, warm lighting, and premium finishes — blending modern design with Houston's charm.",
+    "longDescription": "This River Oaks kitchen transformation seamlessly merges modern functionality with classic sophistication. Custom cabinetry, premium marble countertops, and state-of-the-art appliances create a chef's dream while maintaining the home's elegant character.",
+    "images": [
+      "/images/kitchens/kitchen-1.jpg",
+      "/images/kitchens/kitchen-2.jpg",
+      "/images/kitchens/kitchen-3.jpg"
+    ],
+    "featured": true,
+    "spotlight": true,
+    "tags": ["kitchen", "modern", "luxury", "renovation"]
+  },
+  {
+    "id": "serene-living-memorial",
+    "category": "living",
+    "title": "Contemporary Living Elegance",
+    "location": "Memorial, Houston",
+    "projectType": "Living Room Design",
+    "year": 2024,
+    "description": "An open-concept living area designed for both entertaining and relaxation.",
+    "longDescription": "This Memorial home's living space embodies effortless elegance. Neutral tones, luxurious textures, and carefully curated furnishings create an inviting atmosphere perfect for both intimate gatherings and grand celebrations.",
+    "images": [
+      "/images/living/living-1.jpg",
+      "/images/living/living-2.jpg",
+      "/images/living/living-3.jpg"
+    ],
+    "featured": true,
+    "tags": ["living room", "contemporary", "neutral palette", "entertaining"]
+  },
+  {
+    "id": "master-suite-heights",
+    "category": "bedrooms",
+    "title": "Luxe Bedroom Suite",
+    "location": "West University Place",
+    "projectType": "Master Bedroom",
+    "year": 2023,
+    "description": "A tranquil retreat designed for rest and rejuvenation.",
+    "longDescription": "This Heights master suite is a study in understated luxury. Soft color palettes, premium linens, and custom built-ins create a personal sanctuary that promotes rest and relaxation while reflecting the homeowners' refined taste.",
+    "images": [
+      "/images/bedrooms/bedroom-1.jpg",
+      "/images/bedrooms/bedroom-2.jpg",
+      "/images/bedrooms/bedroom-3.jpg"
+    ],
+    "featured": true,
+    "tags": ["bedroom", "master suite", "tranquil", "custom closet"]
+  },
+  {
+    "id": "spa-bathroom-west-u",
+    "category": "bathrooms",
+    "title": "Spa-Inspired Bathroom",
+    "location": "West University, Houston",
+    "year": 2024,
+    "description": "A luxurious bathroom retreat with premium finishes.",
+    "longDescription": "Transform your daily routine in this spa-inspired West University bathroom. Italian marble, custom vanities, and high-end fixtures create a hotel-worthy experience at home, while maximizing functionality for busy mornings.",
+    "images": [
+      "/images/bathrooms/bathroom-1.jpg",
+      "/images/bathrooms/bathroom-2.jpg",
+      "/images/bathrooms/bathroom-3.jpg"
+    ],
+    "featured": false,
+    "tags": ["bathroom", "spa", "marble", "luxury fixtures"]
+  },
+  {
+    "id": "boutique-office-montrose",
+    "category": "commercial",
+    "title": "Urban Café Redesign",
+    "location": "Downtown Houston",
+    "projectType": "Commercial Space",
+    "year": 2023,
+    "description": "A professional workspace that reflects brand identity.",
+    "longDescription": "This downtown café balances professionalism with creative energy. Custom millwork, strategic lighting, and thoughtful space planning create an environment that inspires productivity while making a memorable impression on clients.",
+    "images": [
+      "/images/commercial/commercial-1.jpg",
+      "/images/commercial/commercial-2.jpg",
+      "/images/commercial/commercial-3.jpg"
+    ],
+    "featured": true,
+    "tags": ["commercial", "café", "boutique", "brand design"]
+  },
+  {
+    "id": "contemporary-kitchen-bellaire",
+    "category": "kitchens",
+    "title": "Contemporary Family Kitchen",
+    "location": "Bellaire, Houston",
+    "projectType": "Kitchen Design",
+    "year": 2023,
+    "description": "A functional yet beautiful space for family gatherings.",
+    "longDescription": "This Bellaire kitchen redesign prioritizes both aesthetics and functionality for a growing family. Ample storage, durable surfaces, and an open layout create a space where cooking, homework, and family time seamlessly coexist.",
+    "images": [
+      "/images/kitchens/kitchen-4.jpg",
+      "/images/kitchens/kitchen-5.jpg",
+      "/images/kitchens/kitchen-6.jpg"
+    ],
+    "featured": false,
+    "tags": ["kitchen", "family-friendly", "contemporary", "functional"]
+  },
+  {
+    "id": "oakwood-residence",
+    "category": "renovations",
+    "title": "The Oakwood Residence",
+    "location": "Sugar Land",
+    "projectType": "Luxury Home Interior",
+    "year": 2024,
+    "description": "Complete luxury home transformation with elegant finishes throughout.",
+    "longDescription": "A comprehensive renovation of this Sugar Land estate, transforming every room with sophisticated design choices, premium materials, and attention to detail that reflects the homeowners' refined lifestyle.",
+    "images": [
+      "/images/living/living-1.jpg",
+      "/images/bedrooms/bedroom-1.jpg",
+      "/images/kitchens/kitchen-1.jpg"
+    ],
+    "featured": true,
+    "tags": ["renovation", "luxury", "full home", "estate"]
+  },
+  {
+    "id": "elegant-dining-room",
+    "category": "dining",
+    "title": "Elegant Dining Experience",
+    "location": "Bellaire, Houston",
+    "projectType": "Dining Room",
+    "year": 2024,
+    "description": "A sophisticated dining space perfect for entertaining.",
+    "longDescription": "This dining room redesign creates the perfect backdrop for memorable gatherings. Custom lighting, rich textures, and carefully selected furnishings elevate everyday meals into special occasions.",
+    "images": [
+      "/images/living/living-2.jpg",
+      "/images/living/living-3.jpg"
+    ],
+    "featured": false,
+    "tags": ["dining", "entertaining", "elegant", "custom lighting"]
+  },
+  {
+    "id": "spa-bathroom-renovation",
+    "category": "renovations",
+    "title": "Complete Bathroom Renovation",
+    "location": "The Heights, Houston",
+    "projectType": "Bathroom Remodel",
+    "year": 2023,
+    "description": "A full bathroom transformation with spa-like amenities.",
+    "longDescription": "This complete bathroom renovation brings resort-style luxury home. Premium fixtures, heated floors, and custom tilework create a daily spa experience.",
+    "images": [
+      "/images/bathrooms/bathroom-1.jpg",
+      "/images/bathrooms/bathroom-2.jpg"
+    ],
+    "featured": false,
+    "tags": ["bathroom", "renovation", "spa", "luxury"]
+  }
+]

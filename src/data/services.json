@@ -1,0 +1,86 @@
+[
+  {
+    "id": "kitchen-design",
+    "title": "Kitchen Design",
+    "description": "Modern, modular kitchens built for beauty and function.",
+    "longDescription": "Transform your kitchen into the heart of your home with our bespoke kitchen design services. We blend contemporary aesthetics with practical functionality, creating spaces that inspire culinary creativity.",
+    "image": "/images/kitchens/kitchen-1.jpg",
+    "features": [
+      "Custom cabinetry and storage solutions",
+      "Premium countertop selection",
+      "Smart appliance integration",
+      "Lighting design optimization"
+    ],
+    "link": "/portfolio#kitchens"
+  },
+  {
+    "id": "living-room",
+    "title": "Living Room Design",
+    "description": "Spaces that balance comfort with sophisticated style.",
+    "longDescription": "Create an inviting atmosphere where elegance meets relaxation. Our living room designs reflect your personality while maintaining a timeless appeal.",
+    "image": "/images/living/living-1.jpg",
+    "features": [
+      "Furniture selection and arrangement",
+      "Color palette development",
+      "Textile and upholstery curation",
+      "Ambient lighting design"
+    ],
+    "link": "/portfolio#living"
+  },
+  {
+    "id": "bedroom-sanctuary",
+    "title": "Bedroom Sanctuary",
+    "description": "Restful retreats designed for tranquility and rejuvenation.",
+    "longDescription": "Your bedroom should be a personal sanctuary. We design serene spaces that promote rest, relaxation, and reflect your individual style.",
+    "image": "/images/bedrooms/bedroom-1.jpg",
+    "features": [
+      "Custom closet organization",
+      "Luxurious bedding selection",
+      "Calming color schemes",
+      "Multi-functional layouts"
+    ],
+    "link": "/portfolio#bedrooms"
+  },
+  {
+    "id": "bathroom-spa",
+    "title": "Bathroom & Spa Design",
+    "description": "Spa-like escapes that elevate your daily routine.",
+    "longDescription": "Experience luxury every day with bathrooms designed to feel like private spas. Premium materials, thoughtful layouts, and elegant fixtures combine for the ultimate retreat.",
+    "image": "/images/bathrooms/bathroom-1.jpg",
+    "features": [
+      "Premium fixture selection",
+      "Custom tile and stone work",
+      "Efficient storage solutions",
+      "Spa-inspired amenities"
+    ],
+    "link": "/portfolio#bathrooms"
+  },
+  {
+    "id": "commercial-design",
+    "title": "Commercial Interior Design",
+    "description": "Professional spaces that reflect your brand's identity.",
+    "longDescription": "Make a lasting impression with commercial interiors that balance functionality with brand expression. From offices to retail, we create environments that enhance productivity and customer experience.",
+    "image": "/images/commercial/commercial-1.jpg",
+    "features": [
+      "Brand-aligned design concepts",
+      "Ergonomic workspace planning",
+      "Traffic flow optimization",
+      "Sustainable material selection"
+    ],
+    "link": "/portfolio#commercial"
+  },
+  {
+    "id": "full-renovation",
+    "title": "Full Home Renovation",
+    "description": "Complete transformations from concept to completion.",
+    "longDescription": "Reimagine your entire home with our comprehensive renovation services. We manage every detail, from initial concept through final installation, ensuring a seamless transformation.",
+    "image": "/images/hero/renovation.jpg",
+    "features": [
+      "Project management",
+      "Contractor coordination",
+      "Timeline and budget oversight",
+      "Quality control and inspection"
+    ],
+    "link": "/process"
+  }
+]
