@@ -3,7 +3,7 @@ import HeroAbout from "../components/HeroAbout";
 import StoryBlock from "../components/StoryBlock";
 import TimelineStrip from "../components/TimelineStrip";
 import PhilosophyCards from "../components/PhilosophyCards";
-import TeamGrid from "../components/TeamGrid";
+
 import StatsBlock from "../components/StatsBlock";
 import TestimonialStrip from "../components/TestimonialStrip";
 import CTAContact from "../components/CTAContact";
@@ -89,9 +89,6 @@ export default function About() {
 
       {/* 5. Impact Stats / Trust Bar */}
       <StatsBlock />
-
-      {/* 6. Team Snapshot */}
-      <TeamGrid />
 
       {/* 7. Client Stories / Short Testimonials */}
       <TestimonialStrip />
