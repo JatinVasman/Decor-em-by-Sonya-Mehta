@@ -9,7 +9,7 @@
  */
 export const adminNotificationTemplate = (formData) => ({
   subject: `New Contact Form Submission from ${formData.fullName}`,
-  
+
   text: `
 New contact form submission received:
 
@@ -19,15 +19,15 @@ CLIENT INFORMATION
 
 Name: ${formData.fullName}
 Email: ${formData.email}
-Phone: ${formData.phone || 'Not provided'}
+Phone: ${formData.phone || "Not provided"}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 PROJECT DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Service Interested In: ${formData.service || 'Not specified'}
-Project Location: ${formData.location || 'Not specified'}
-Estimated Budget: ${formData.budget || 'Not specified'}
+Service Interested In: ${formData.service || "Not specified"}
+Project Location: ${formData.location || "Not specified"}
+Estimated Budget: ${formData.budget || "Not specified"}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 MESSAGE
@@ -37,17 +37,19 @@ ${formData.message}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Consent to Contact: ${formData.consent ? 'Yes' : 'No'}
-Submission Time: ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })} CST
+Consent to Contact: ${formData.consent ? "Yes" : "No"}
+Submission Time: ${new Date().toLocaleString("en-US", {
+    timeZone: "America/Chicago",
+  })} CST
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 Reply to this client at: ${formData.email}
-Call them at: ${formData.phone || 'N/A'}
+Call them at: ${formData.phone || "N/A"}
 
 This is an automated notification from decorembysonyamehta.com
   `,
-  
+
   html: `
 <!DOCTYPE html>
 <html lang="en">
@@ -84,12 +86,16 @@ This is an automated notification from decorembysonyamehta.com
               <table width="100%" cellpadding="8" cellspacing="0">
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600; width: 150px;">Name:</td>
-                  <td style="color: #2B2B2B; font-size: 14px;">${formData.fullName}</td>
+                  <td style="color: #2B2B2B; font-size: 14px;">${
+                    formData.fullName
+                  }</td>
                 </tr>
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Email:</td>
                   <td style="color: #2B2B2B; font-size: 14px;">
-                    <a href="mailto:${formData.email}" style="color: #C9A76F; text-decoration: none;">
+                    <a href="mailto:${
+                      formData.email
+                    }" style="color: #C9A76F; text-decoration: none;">
                       ${formData.email}
                     </a>
                   </td>
@@ -97,7 +103,11 @@ This is an automated notification from decorembysonyamehta.com
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Phone:</td>
                   <td style="color: #2B2B2B; font-size: 14px;">
-                    ${formData.phone ? `<a href="tel:${formData.phone}" style="color: #C9A76F; text-decoration: none;">${formData.phone}</a>` : 'Not provided'}
+                    ${
+                      formData.phone
+                        ? `<a href="tel:${formData.phone}" style="color: #C9A76F; text-decoration: none;">${formData.phone}</a>`
+                        : "Not provided"
+                    }
                   </td>
                 </tr>
               </table>
@@ -114,15 +124,21 @@ This is an automated notification from decorembysonyamehta.com
               <table width="100%" cellpadding="8" cellspacing="0">
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600; width: 150px;">Service:</td>
-                  <td style="color: #2B2B2B; font-size: 14px;">${formData.service || 'Not specified'}</td>
+                  <td style="color: #2B2B2B; font-size: 14px;">${
+                    formData.service || "Not specified"
+                  }</td>
                 </tr>
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Location:</td>
-                  <td style="color: #2B2B2B; font-size: 14px;">${formData.location || 'Not specified'}</td>
+                  <td style="color: #2B2B2B; font-size: 14px;">${
+                    formData.location || "Not specified"
+                  }</td>
                 </tr>
                 <tr>
                   <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Budget:</td>
-                  <td style="color: #2B2B2B; font-size: 14px;">${formData.budget || 'Not specified'}</td>
+                  <td style="color: #2B2B2B; font-size: 14px;">${
+                    formData.budget || "Not specified"
+                  }</td>
                 </tr>
               </table>
             </td>
@@ -149,7 +165,9 @@ This is an automated notification from decorembysonyamehta.com
               <table width="100%" cellpadding="10" cellspacing="0">
                 <tr>
                   <td align="center">
-                    <a href="mailto:${formData.email}" style="display: inline-block; padding: 14px 30px; background-color: #C9A76F; color: #FFFFFF; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 14px;">
+                    <a href="mailto:${
+                      formData.email
+                    }" style="display: inline-block; padding: 14px 30px; background-color: #C9A76F; color: #FFFFFF; text-decoration: none; border-radius: 4px; font-weight: 600; font-size: 14px;">
                       Reply to Client
                     </a>
                   </td>
@@ -162,7 +180,9 @@ This is an automated notification from decorembysonyamehta.com
           <tr>
             <td style="background-color: #FAF9F6; padding: 20px 40px; border-radius: 0 0 8px 8px; text-align: center; border-top: 1px solid #E4DED7;">
               <p style="margin: 0; color: #3E3E3E; font-size: 12px;">
-                Submission Time: ${new Date().toLocaleString('en-US', { timeZone: 'America/Chicago' })} CST
+                Submission Time: ${new Date().toLocaleString("en-US", {
+                  timeZone: "America/Chicago",
+                })} CST
               </p>
               <p style="margin: 8px 0 0; color: #3E3E3E; font-size: 12px;">
                 This is an automated notification from decorembysonyamehta.com
@@ -176,7 +196,7 @@ This is an automated notification from decorembysonyamehta.com
   </table>
 </body>
 </html>
-  `
+  `,
 });
 
 /**
@@ -185,7 +205,7 @@ This is an automated notification from decorembysonyamehta.com
  */
 export const clientConfirmationTemplate = (formData) => ({
   subject: "Thank you for contacting Decor'em by Sonya Mehta",
-  
+
   text: `
 Dear ${formData.fullName},
 
@@ -195,9 +215,9 @@ Thank you for reaching out to Decor'em by Sonya Mehta. We have received your inq
 YOUR SUBMISSION DETAILS
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-Service: ${formData.service || 'Not specified'}
-Location: ${formData.location || 'Not specified'}
-Budget: ${formData.budget || 'Not specified'}
+Service: ${formData.service || "Not specified"}
+Location: ${formData.location || "Not specified"}
+Budget: ${formData.budget || "Not specified"}
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 WHAT HAPPENS NEXT?
@@ -224,14 +244,14 @@ Best regards,
 
 Sonya Mehta
 Decor'em by Sonya Mehta
-Houston's Premier Interior Design Studio
+Houston's Premier Interior Design Practice
 
 📧 decorembysonyamehta@gmail.com
 📞 +1 (281) 701-6041
 📍 Houston, Texas
 📷 Instagram: @s_decorem
   `,
-  
+
   html: `
 <!DOCTYPE html>
 <html lang="en">
@@ -280,18 +300,26 @@ Houston's Premier Interior Design Studio
                 <table width="100%" cellpadding="6" cellspacing="0">
                   <tr>
                     <td style="color: #3E3E3E; font-size: 14px; font-weight: 600; width: 120px;">Service:</td>
-                    <td style="color: #2B2B2B; font-size: 14px;">${formData.service || 'Not specified'}</td>
+                    <td style="color: #2B2B2B; font-size: 14px;">${
+                      formData.service || "Not specified"
+                    }</td>
                   </tr>
                   <tr>
                     <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Location:</td>
-                    <td style="color: #2B2B2B; font-size: 14px;">${formData.location || 'Not specified'}</td>
+                    <td style="color: #2B2B2B; font-size: 14px;">${
+                      formData.location || "Not specified"
+                    }</td>
                   </tr>
-                  ${formData.budget ? `
+                  ${
+                    formData.budget
+                      ? `
                   <tr>
                     <td style="color: #3E3E3E; font-size: 14px; font-weight: 600;">Budget:</td>
                     <td style="color: #2B2B2B; font-size: 14px;">${formData.budget}</td>
                   </tr>
-                  ` : ''}
+                  `
+                      : ""
+                  }
                 </table>
               </div>
             </td>
@@ -417,5 +445,5 @@ Houston's Premier Interior Design Studio
   </table>
 </body>
 </html>
-  `
+  `,
 });

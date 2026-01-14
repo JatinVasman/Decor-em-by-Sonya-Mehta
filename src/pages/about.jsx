@@ -1,12 +1,12 @@
-import { NextSeo } from 'next-seo';
-import HeroAbout from '../components/HeroAbout';
-import StoryBlock from '../components/StoryBlock';
-import TimelineStrip from '../components/TimelineStrip';
-import PhilosophyCards from '../components/PhilosophyCards';
-import TeamGrid from '../components/TeamGrid';
-import StatsBlock from '../components/StatsBlock';
-import TestimonialStrip from '../components/TestimonialStrip';
-import CTAContact from '../components/CTAContact';
+import { NextSeo } from "next-seo";
+import HeroAbout from "../components/HeroAbout";
+import StoryBlock from "../components/StoryBlock";
+import TimelineStrip from "../components/TimelineStrip";
+import PhilosophyCards from "../components/PhilosophyCards";
+import TeamGrid from "../components/TeamGrid";
+import StatsBlock from "../components/StatsBlock";
+import TestimonialStrip from "../components/TestimonialStrip";
+import CTAContact from "../components/CTAContact";
 
 /**
  * About Page
@@ -18,51 +18,52 @@ export default function About() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Sonya Mehta",
-    "jobTitle": "Interior Designer & Founder",
-    "worksFor": {
+    name: "Sonya Mehta",
+    jobTitle: "Interior Designer & Founder",
+    worksFor: {
       "@type": "Organization",
-      "name": "Decor'em by Sonya Mehta"
+      name: "Decor'em by Sonya Mehta",
     },
-    "address": {
+    address: {
       "@type": "PostalAddress",
-      "addressLocality": "Houston",
-      "addressRegion": "TX",
-      "addressCountry": "USA"
+      addressLocality: "Houston",
+      addressRegion: "TX",
+      addressCountry: "USA",
     },
-    "alumniOf": "Interior Architecture Program",
-    "knowsAbout": [
+    alumniOf: "Interior Architecture Program",
+    knowsAbout: [
       "Interior Design",
       "Home Renovation",
       "Residential Interior Design",
       "Commercial Interior Design",
       "Kitchen Design",
       "Bathroom Design",
-      "Luxury Home Design"
+      "Luxury Home Design",
     ],
-    "sameAs": [
+    sameAs: [
       "https://instagram.com/decoremsonya",
-      "https://linkedin.com/in/sonyamehta"
-    ]
+      "https://linkedin.com/in/sonyamehta",
+    ],
   };
 
   return (
     <>
       <NextSeo
         title="About | Decor'em by Sonya Mehta — Houston Interior Designer"
-        description="Meet Sonya Mehta — founder of Decor'em, a Houston-based interior design and renovation studio crafting personalized, high-end homes. Learn about our design philosophy, team, and approach."
+        description="Meet Sonya Mehta — founder of Decor'em, a Houston-based interior design and renovation practice crafting personalized, high-end homes. Learn about our design philosophy, team, and approach."
         canonical="https://www.decoremsonya.com/about"
         openGraph={{
           title: "About | Decor'em by Sonya Mehta — Houston Interior Designer",
-          description: "Meet Sonya Mehta — founder of Decor'em, a Houston-based interior design and renovation studio crafting personalized, high-end homes. Learn about our design philosophy, team, and approach.",
-          type: 'website',
-          url: 'https://www.decoremsonya.com/about',
+          description:
+            "Meet Sonya Mehta — founder of Decor'em, a Houston-based interior design and renovation practice crafting personalized, high-end homes. Learn about our design philosophy, team, and approach.",
+          type: "website",
+          url: "https://www.decoremsonya.com/about",
           images: [
             {
-              url: '/images/team/sonya-mehta.jpg',
+              url: "/images/team/sonya-mehta.jpg",
               width: 1200,
               height: 630,
-              alt: 'Sonya Mehta — Houston interior designer',
+              alt: "Sonya Mehta — Houston interior designer",
             },
           ],
         }}

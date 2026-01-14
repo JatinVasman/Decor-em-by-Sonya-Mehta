@@ -1,11 +1,11 @@
-import { useState } from 'react';
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowUp } from 'lucide-react';
-import AnimationWrapper from '../components/AnimationWrapper';
-import portfolioData from '../data/portfolio.json';
+import { useState } from "react";
+import { NextSeo } from "next-seo";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowUp } from "lucide-react";
+import AnimationWrapper from "../components/AnimationWrapper";
+import portfolioData from "../data/portfolio.json";
 
 /**
  * Portfolio Page
@@ -13,46 +13,47 @@ import portfolioData from '../data/portfolio.json';
  * Houston's luxury design transformations
  */
 export default function Portfolio() {
-  const [filter, setFilter] = useState('all');
+  const [filter, setFilter] = useState("all");
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   const categories = [
-    { id: 'all', label: 'All' },
-    { id: 'kitchens', label: 'Kitchens' },
-    { id: 'living', label: 'Living Rooms' },
-    { id: 'bedrooms', label: 'Bedrooms' },
-    { id: 'bathrooms', label: 'Bathrooms' },
-    { id: 'dining', label: 'Dining' },
-    { id: 'commercial', label: 'Commercial' },
-    { id: 'renovations', label: 'Renovations' },
+    { id: "all", label: "All" },
+    { id: "kitchens", label: "Kitchens" },
+    { id: "living", label: "Living Rooms" },
+    { id: "bedrooms", label: "Bedrooms" },
+    { id: "bathrooms", label: "Bathrooms" },
+    { id: "dining", label: "Dining" },
+    { id: "commercial", label: "Commercial" },
+    { id: "renovations", label: "Renovations" },
   ];
 
-  const filteredProjects = filter === 'all' 
-    ? portfolioData 
-    : portfolioData.filter(project => project.category === filter);
+  const filteredProjects =
+    filter === "all"
+      ? portfolioData
+      : portfolioData.filter((project) => project.category === filter);
 
-  const spotlightProject = portfolioData.find(p => p.spotlight);
+  const spotlightProject = portfolioData.find((p) => p.spotlight);
 
   // Scroll to top functionality
-  if (typeof window !== 'undefined') {
-    window.addEventListener('scroll', () => {
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", () => {
       setShowScrollTop(window.scrollY > 500);
     });
   }
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
       <NextSeo
         title="Portfolio | Decor'em by Sonya Mehta — Interior Design & Renovation in Houston"
-        description="Browse the portfolio of Decor'em by Sonya Mehta — Houston's leading interior design and renovation studio. Discover our work across homes, kitchens, and commercial spaces."
+        description="Browse the portfolio of Decor'em by Sonya Mehta — Houston's leading interior design and renovation practice. Discover our work across homes, kitchens, and commercial spaces."
         openGraph={{
           title: "Portfolio | Decor'em by Sonya Mehta",
           description: "Spaces That Speak Elegance and Emotion.",
-          images: [{ url: '/images/hero/portfolio.jpg' }]
+          images: [{ url: "/images/hero/portfolio.jpg" }],
         }}
       />
 
@@ -86,14 +87,15 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Explore our collection of transformative designs across Houston — each space crafted with elegance, precision, and heart.
+            Explore our collection of transformative designs across Houston —
+            each space crafted with elegance, precision, and heart.
           </motion.p>
         </div>
 
         {/* SEO Keywords (hidden) */}
         <div className="sr-only">
-          interior design portfolio Houston, luxury interiors, home renovation projects, 
-          Sonya Mehta designs
+          interior design portfolio Houston, luxury interiors, home renovation
+          projects, Sonya Mehta designs
         </div>
       </section>
 
@@ -110,8 +112,8 @@ export default function Portfolio() {
                 transition={{ duration: 0.4, delay: index * 0.1 }}
                 className={`relative px-6 py-2 text-sm md:text-base font-medium transition-colors ${
                   filter === category.id
-                    ? 'text-[#C9A76F]'
-                    : 'text-[#2B2B2B] hover:text-[#C9A76F]'
+                    ? "text-[#C9A76F]"
+                    : "text-[#2B2B2B] hover:text-[#C9A76F]"
                 }`}
               >
                 {category.label}
@@ -150,7 +152,7 @@ export default function Portfolio() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     loading="lazy"
                   />
-                  
+
                   {/* Hover Overlay */}
                   <div className="absolute inset-0 bg-[#C9A76F] opacity-0 group-hover:opacity-85 transition-opacity duration-500 flex items-center justify-center">
                     <div className="text-center px-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
@@ -193,7 +195,8 @@ export default function Portfolio() {
           {filteredProjects.length === 0 && (
             <div className="text-center py-20">
               <p className="body-lg text-[#3E3E3E]">
-                No projects found in this category. Please select another filter.
+                No projects found in this category. Please select another
+                filter.
               </p>
             </div>
           )}
@@ -229,7 +232,9 @@ export default function Portfolio() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: 0.2 }}
               >
-                <p className="overline text-[#C9A76F] mb-4">Project Spotlight</p>
+                <p className="overline text-[#C9A76F] mb-4">
+                  Project Spotlight
+                </p>
                 <h2 className="heading-2xl text-[#2B2B2B] mb-6">
                   {spotlightProject.title}
                 </h2>
@@ -241,15 +246,21 @@ export default function Portfolio() {
                 <div className="grid grid-cols-3 gap-6 mb-10 p-6 bg-white/50 rounded-sm">
                   <div>
                     <p className="body-sm text-[#3E3E3E] mb-1">Duration</p>
-                    <p className="heading-sm text-[#2B2B2B]">{spotlightProject.duration}</p>
+                    <p className="heading-sm text-[#2B2B2B]">
+                      {spotlightProject.duration}
+                    </p>
                   </div>
                   <div>
                     <p className="body-sm text-[#3E3E3E] mb-1">Area</p>
-                    <p className="heading-sm text-[#2B2B2B]">{spotlightProject.area}</p>
+                    <p className="heading-sm text-[#2B2B2B]">
+                      {spotlightProject.area}
+                    </p>
                   </div>
                   <div>
                     <p className="body-sm text-[#3E3E3E] mb-1">Style</p>
-                    <p className="heading-sm text-[#2B2B2B]">{spotlightProject.style}</p>
+                    <p className="heading-sm text-[#2B2B2B]">
+                      {spotlightProject.style}
+                    </p>
                   </div>
                 </div>
 
@@ -277,7 +288,9 @@ export default function Portfolio() {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-[#C9A76F] text-2xl">★</span>
+                <span key={i} className="text-[#C9A76F] text-2xl">
+                  ★
+                </span>
               ))}
             </div>
             <h2 className="text-4xl lg:text-5xl font-serif italic text-white drop-shadow-sm">
@@ -294,7 +307,10 @@ export default function Portfolio() {
               transition={{ duration: 0.6 }}
             >
               <p className="text-white/95 text-lg italic mb-6 leading-relaxed drop-shadow-sm">
-                "It was an absolute pleasure to work with Sonya. She was incredible at blending our existing decor with our desire for a new look. She knows her stuff and helped us transform our house into a more modern and cozy space."
+                "It was an absolute pleasure to work with Sonya. She was
+                incredible at blending our existing decor with our desire for a
+                new look. She knows her stuff and helped us transform our house
+                into a more modern and cozy space."
               </p>
               <p className="text-white font-semibold tracking-wide">
                 — A. Azhdarinia
@@ -309,7 +325,10 @@ export default function Portfolio() {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <p className="text-white/95 text-lg italic mb-6 leading-relaxed drop-shadow-sm">
-                "Sonya and her team were absolutely amazing! The entire team's attention to detail was phenomenal. Sonya was always attentive, responsive and guided my choices in a respectful and welcoming way."
+                "Sonya and her team were absolutely amazing! The entire team's
+                attention to detail was phenomenal. Sonya was always attentive,
+                responsive and guided my choices in a respectful and welcoming
+                way."
               </p>
               <p className="text-white font-semibold tracking-wide">
                 — Kalyani
@@ -332,7 +351,8 @@ export default function Portfolio() {
               Ready to Transform Your Space?
             </h2>
             <p className="body-xl text-[#FAF9F6]/90 mb-10">
-              Let's bring your vision to life with expert design and personalized service.
+              Let's bring your vision to life with expert design and
+              personalized service.
             </p>
 
             {/* Button */}

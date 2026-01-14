@@ -1,17 +1,25 @@
-import { NextSeo } from 'next-seo';
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowRight, MessageSquare, Ruler, Palette, ShoppingBag, Hammer, Sparkles } from 'lucide-react';
-import HeroSection from '../components/HeroSection';
-import SectionHeader from '../components/SectionHeader';
-import ServiceCard from '../components/ServiceCard';
-import TestimonialCarousel from '../components/TestimonialCarousel';
-import BeforeAfterSlider from '../components/BeforeAfterSlider';
-import AnimationWrapper from '../components/AnimationWrapper';
-import servicesData from '../data/services.json';
-import testimonialsData from '../data/testimonials.json';
-import portfolioData from '../data/portfolio.json';
+import { NextSeo } from "next-seo";
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  MessageSquare,
+  Ruler,
+  Palette,
+  ShoppingBag,
+  Hammer,
+  Sparkles,
+} from "lucide-react";
+import HeroSection from "../components/HeroSection";
+import SectionHeader from "../components/SectionHeader";
+import ServiceCard from "../components/ServiceCard";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+import BeforeAfterSlider from "../components/BeforeAfterSlider";
+import AnimationWrapper from "../components/AnimationWrapper";
+import servicesData from "../data/services.json";
+import testimonialsData from "../data/testimonials.json";
+import portfolioData from "../data/portfolio.json";
 
 /**
  * Home Page
@@ -19,27 +27,41 @@ import portfolioData from '../data/portfolio.json';
  * Luxury Interior Design & Renovation - Houston, Texas
  */
 export default function Home() {
-  const featuredProjects = portfolioData.filter(p => p.featured).slice(0, 4);
-  
+  const featuredProjects = portfolioData.filter((p) => p.featured).slice(0, 4);
+
   const processSteps = [
-    { icon: MessageSquare, label: 'Consultation', description: 'Understanding your vision' },
-    { icon: Ruler, label: 'Planning', description: 'Space layout design' },
-    { icon: Palette, label: 'Development', description: 'Mood boards & concepts' },
-    { icon: ShoppingBag, label: 'Selection', description: 'Material & fixture choices' },
-    { icon: Hammer, label: 'Execution', description: 'Expert installation' },
-    { icon: Sparkles, label: 'Styling', description: 'Final touches' }
+    {
+      icon: MessageSquare,
+      label: "Consultation",
+      description: "Understanding your vision",
+    },
+    { icon: Ruler, label: "Planning", description: "Space layout design" },
+    {
+      icon: Palette,
+      label: "Development",
+      description: "Mood boards & concepts",
+    },
+    {
+      icon: ShoppingBag,
+      label: "Selection",
+      description: "Material & fixture choices",
+    },
+    { icon: Hammer, label: "Execution", description: "Expert installation" },
+    { icon: Sparkles, label: "Styling", description: "Final touches" },
   ];
 
   return (
     <>
       <NextSeo
         title="Decor'em by Sonya Mehta | Luxury Interior Designer & Renovation Expert in Houston"
-        description="Transform your space with Decor'em by Sonya Mehta — Houston's trusted interior design and renovation studio for luxury homes, kitchens, and commercial spaces."
+        description="Transform your space with Decor'em by Sonya Mehta — Houston's trusted interior design and renovation practice for luxury homes, kitchens, and commercial spaces."
         openGraph={{
-          title: "Decor'em by Sonya Mehta | Luxury Interior Designer & Renovation Expert in Houston",
-          description: "Transform your space with Decor'em by Sonya Mehta — Houston's trusted interior design and renovation studio for luxury homes, kitchens, and commercial spaces.",
-          type: 'website',
-          locale: 'en_US',
+          title:
+            "Decor'em by Sonya Mehta | Luxury Interior Designer & Renovation Expert in Houston",
+          description:
+            "Transform your space with Decor'em by Sonya Mehta — Houston's trusted interior design and renovation practice for luxury homes, kitchens, and commercial spaces.",
+          type: "website",
+          locale: "en_US",
           site_name: "Decor'em by Sonya Mehta",
         }}
       />
@@ -78,15 +100,18 @@ export default function Home() {
                   Welcome to Decor'em by Sonya Mehta
                 </h2>
                 <p className="body-lg text-heading mb-6 leading-relaxed">
-                  We craft homes that reflect personality and purpose through timeless design and careful renovation. 
-                  Each project is a unique journey, blending your vision with our expertise to create spaces that feel 
-                  both luxurious and lived-in.
+                  We craft homes that reflect personality and purpose through
+                  timeless design and careful renovation. Each project is a
+                  unique journey, blending your vision with our expertise to
+                  create spaces that feel both luxurious and lived-in.
                 </p>
                 <p className="body-base text-heading/80 mb-8 leading-relaxed">
-                  With over a decade of experience transforming Houston homes, we understand that great design goes 
-                  beyond aesthetics—it's about creating environments that enhance your daily life and bring joy for years to come.
+                  With over a decade of experience transforming Houston homes,
+                  we understand that great design goes beyond aesthetics—it's
+                  about creating environments that enhance your daily life and
+                  bring joy for years to come.
                 </p>
-                <Link 
+                <Link
                   href="/about"
                   className="btn-primary inline-flex items-center group"
                 >
@@ -112,7 +137,11 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {servicesData.slice(0, 6).map((service, index) => (
-              <AnimationWrapper key={service.id} animation="fade-up" delay={index * 0.1}>
+              <AnimationWrapper
+                key={service.id}
+                animation="fade-up"
+                delay={index * 0.1}
+              >
                 <div className="group relative bg-white rounded-xl overflow-hidden border border-border hover:border-accent transition-all duration-500 h-full">
                   <div className="relative aspect-square overflow-hidden">
                     <Image
@@ -125,9 +154,13 @@ export default function Home() {
                     <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/20 transition-all duration-500" />
                   </div>
                   <div className="p-8">
-                    <h3 className="heading-md mb-3 text-text">{service.title}</h3>
-                    <p className="body-base text-heading/80 mb-4">{service.description}</p>
-                    <Link 
+                    <h3 className="heading-md mb-3 text-text">
+                      {service.title}
+                    </h3>
+                    <p className="body-base text-heading/80 mb-4">
+                      {service.description}
+                    </p>
+                    <Link
                       href={service.link}
                       className="inline-flex items-center text-accent hover:text-accent/80 transition-colors font-medium"
                     >
@@ -200,14 +233,22 @@ export default function Home() {
               {processSteps.map((step, index) => {
                 const Icon = step.icon;
                 return (
-                  <AnimationWrapper key={index} animation="fade-up" delay={index * 0.1}>
+                  <AnimationWrapper
+                    key={index}
+                    animation="fade-up"
+                    delay={index * 0.1}
+                  >
                     <div className="text-center relative">
                       <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 mb-6 group-hover:bg-accent/20 transition-colors">
                         <Icon className="w-10 h-10 text-accent" />
                       </div>
-                      <h3 className="heading-sm mb-2 text-text">{step.label}</h3>
-                      <p className="body-sm text-heading/70">{step.description}</p>
-                      
+                      <h3 className="heading-sm mb-2 text-text">
+                        {step.label}
+                      </h3>
+                      <p className="body-sm text-heading/70">
+                        {step.description}
+                      </p>
+
                       {/* Connector Line */}
                       {index < processSteps.length - 1 && (
                         <div className="hidden lg:block absolute top-10 left-[60%] w-full h-0.5 bg-gradient-to-r from-accent/50 to-accent/10" />
@@ -219,7 +260,7 @@ export default function Home() {
             </div>
 
             <div className="text-center mt-16">
-              <Link 
+              <Link
                 href="/process"
                 className="btn-secondary inline-flex items-center group"
               >
@@ -244,8 +285,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {featuredProjects.map((project, index) => (
-              <AnimationWrapper key={project.id} animation="fade-up" delay={index * 0.1}>
-                <Link href={`/portfolio#${project.category}`} className="group block">
+              <AnimationWrapper
+                key={project.id}
+                animation="fade-up"
+                delay={index * 0.1}
+              >
+                <Link
+                  href={`/portfolio#${project.category}`}
+                  className="group block"
+                >
                   <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
                     <Image
                       src={project.images[0]}
@@ -256,11 +304,15 @@ export default function Home() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
                     <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/20 transition-all duration-500" />
-                    
+
                     <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                       <h3 className="heading-lg mb-2">{project.title}</h3>
-                      <p className="body-base text-white/90 mb-1">{project.location}</p>
-                      <p className="body-sm text-white/70">{project.description}</p>
+                      <p className="body-base text-white/90 mb-1">
+                        {project.location}
+                      </p>
+                      <p className="body-sm text-white/70">
+                        {project.description}
+                      </p>
                     </div>
                   </div>
                 </Link>
@@ -269,7 +321,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-16">
-            <Link 
+            <Link
               href="/portfolio"
               className="btn-primary inline-flex items-center group"
             >
@@ -291,7 +343,7 @@ export default function Home() {
             className="mb-20"
           />
 
-          <TestimonialCarousel 
+          <TestimonialCarousel
             testimonials={testimonialsData}
             autoPlay={true}
             interval={5000}
@@ -302,7 +354,7 @@ export default function Home() {
       {/* Call to Action / Consultation Banner */}
       <section className="relative py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#C9A76F] via-[#B89960] to-[#A88650]" />
-        
+
         <div className="relative z-10 container-custom text-center">
           <AnimationWrapper animation="fade-up">
             <h2 className="heading-2xl mb-6 text-background">
@@ -311,8 +363,8 @@ export default function Home() {
             <p className="body-xl text-background/90 mb-12 max-w-2xl mx-auto">
               Schedule your consultation and begin your design journey.
             </p>
-            
-            <Link 
+
+            <Link
               href="/contact"
               className="inline-flex items-center px-10 py-4 border-2 border-background text-background font-semibold rounded-sm hover:bg-background hover:text-accent transition-all duration-400 group"
             >

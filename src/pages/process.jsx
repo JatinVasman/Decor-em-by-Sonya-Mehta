@@ -1,8 +1,8 @@
-import { NextSeo } from 'next-seo';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
-import Link from 'next/link';
-import { Download } from 'lucide-react';
+import { NextSeo } from "next-seo";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { Download } from "lucide-react";
 
 /**
  * Process Page
@@ -13,52 +13,62 @@ export default function Process() {
     {
       number: "01",
       title: "CONSULTATION & CONCEPT",
-      description: "We begin by understanding your lifestyle, preferences, and vision. Every design starts with a conversation — your ideas lead the way."
+      description:
+        "We begin by understanding your lifestyle, preferences, and vision. Every design starts with a conversation — your ideas lead the way.",
     },
     {
       number: "02",
       title: "SPACE PLANNING & LAYOUT",
-      description: "We analyze your space and create functional layouts that balance beauty, comfort, and flow — ensuring every corner serves a purpose."
+      description:
+        "We analyze your space and create functional layouts that balance beauty, comfort, and flow — ensuring every corner serves a purpose.",
     },
     {
       number: "03",
       title: "DESIGN DEVELOPMENT",
-      description: "From mood boards to material palettes, we craft a cohesive concept that reflects your personality and enhances your everyday living."
+      description:
+        "From mood boards to material palettes, we craft a cohesive concept that reflects your personality and enhances your everyday living.",
     },
     {
       number: "04",
       title: "MATERIAL SELECTION",
-      description: "We handpick high-quality finishes, fixtures, and furnishings — combining textures, tones, and details for timeless elegance."
+      description:
+        "We handpick high-quality finishes, fixtures, and furnishings — combining textures, tones, and details for timeless elegance.",
     },
     {
       number: "05",
       title: "EXECUTION & SUPERVISION",
-      description: "Our team ensures seamless coordination and precise workmanship throughout the renovation and installation process."
+      description:
+        "Our team ensures seamless coordination and precise workmanship throughout the renovation and installation process.",
     },
     {
       number: "06",
       title: "FINAL STYLING & HANDOVER",
-      description: "We add the finishing touches that bring your space to life — refined, balanced, and ready to live beautifully."
-    }
+      description:
+        "We add the finishing touches that bring your space to life — refined, balanced, and ready to live beautifully.",
+    },
   ];
 
   const testimonials = [
     {
       name: "A. Azhdarinia",
-      quote: "It was an absolute pleasure to work with Sonya on remodeling projects in our home. She was incredible at blending our existing decor with our desire for a new look. She knows her stuff and helped us transform our house into a more modern and cozy space."
+      quote:
+        "It was an absolute pleasure to work with Sonya on remodeling projects in our home. She was incredible at blending our existing decor with our desire for a new look. She knows her stuff and helped us transform our house into a more modern and cozy space.",
     },
     {
       name: "Kalyani",
-      quote: "Sonya and her team were absolutely amazing! They did paneling in our master, our staircase wall and the floating shelves in our living room and the entire team's attention to detail was phenomenal. Sonya was always attentive, responsive and guided my choices in a respectful and welcoming way."
+      quote:
+        "Sonya and her team were absolutely amazing! They did paneling in our master, our staircase wall and the floating shelves in our living room and the entire team's attention to detail was phenomenal. Sonya was always attentive, responsive and guided my choices in a respectful and welcoming way.",
     },
     {
       name: "Ravi T",
-      quote: "She understood our design sensibilities and preferences and provided us with alternatives that we are excited to pick from. The best part is that she not only provided us with excellent designs but also had a high quality team that could bring the design to reality within expected timelines and budget!"
+      quote:
+        "She understood our design sensibilities and preferences and provided us with alternatives that we are excited to pick from. The best part is that she not only provided us with excellent designs but also had a high quality team that could bring the design to reality within expected timelines and budget!",
     },
     {
       name: "R. Malani",
-      quote: "We hired Sonya for our home remodel and it was a great experience. She is hardworking, has good taste and always responsive to our needs. We would recommend Sonya to anyone looking for any kind of design or remodel projects for their home."
-    }
+      quote:
+        "We hired Sonya for our home remodel and it was a great experience. She is hardworking, has good taste and always responsive to our needs. We would recommend Sonya to anyone looking for any kind of design or remodel projects for their home.",
+    },
   ];
 
   return (
@@ -68,8 +78,9 @@ export default function Process() {
         description="Discover the 6-step design process of Decor'em by Sonya Mehta, Houston's leading interior designer — from concept to handover, every step crafted with detail and care."
         openGraph={{
           title: "Our Process | Decor'em by Sonya Mehta",
-          description: "From vision to reality — every step crafted with precision and passion.",
-          images: [{ url: '/images/hero/process.jpg' }]
+          description:
+            "From vision to reality — every step crafted with precision and passion.",
+          images: [{ url: "/images/hero/process.jpg" }],
         }}
       />
 
@@ -80,21 +91,21 @@ export default function Process() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "serviceType": "Interior Design and Renovation Process",
-            "provider": {
+            serviceType: "Interior Design and Renovation Process",
+            provider: {
               "@type": "Organization",
-              "name": "Decor'em by Sonya Mehta",
-              "url": "https://www.decoremsonya.com",
-              "telephone": "+1 (281) 701-6041",
-              "email": "decorembysonyamehta@gmail.com",
-              "address": {
+              name: "Decor'em by Sonya Mehta",
+              url: "https://www.decoremsonya.com",
+              telephone: "+1 (281) 701-6041",
+              email: "decorembysonyamehta@gmail.com",
+              address: {
                 "@type": "PostalAddress",
-                "addressLocality": "Houston",
-                "addressRegion": "TX",
-                "addressCountry": "US"
-              }
-            }
-          })
+                addressLocality: "Houston",
+                addressRegion: "TX",
+                addressCountry: "US",
+              },
+            },
+          }),
         }}
       />
 
@@ -104,7 +115,7 @@ export default function Process() {
         <div className="absolute inset-0">
           <Image
             src="/images/hero/process.jpg"
-            alt="Interior design studio workspace"
+            alt="Interior design practice workspace"
             fill
             className="object-cover"
             priority
@@ -166,9 +177,9 @@ export default function Process() {
 
           {/* SEO Keywords (hidden) */}
           <div className="sr-only">
-            interior design process Houston, design development, material selection, 
-            renovation steps, consultation concept, space planning layout, execution supervision, 
-            final styling handover
+            interior design process Houston, design development, material
+            selection, renovation steps, consultation concept, space planning
+            layout, execution supervision, final styling handover
           </div>
         </div>
       </section>
@@ -186,7 +197,9 @@ export default function Process() {
           >
             <div className="flex items-center justify-center gap-2 mb-4">
               {[...Array(5)].map((_, i) => (
-                <span key={i} className="text-[#C9A76F] text-2xl">★</span>
+                <span key={i} className="text-[#C9A76F] text-2xl">
+                  ★
+                </span>
               ))}
             </div>
             <h2 className="text-4xl lg:text-5xl font-serif italic text-white drop-shadow-sm">
@@ -217,7 +230,7 @@ export default function Process() {
 
           {/* SEO Keywords (hidden) */}
           <div className="sr-only">
-            client testimonials Houston interior designer, renovation reviews, 
+            client testimonials Houston interior designer, renovation reviews,
             customer experience Decor'em
           </div>
         </div>
@@ -240,10 +253,7 @@ export default function Process() {
             </p>
 
             {/* Button */}
-            <motion.div
-              whileHover={{ y: -4 }}
-              transition={{ duration: 0.3 }}
-            >
+            <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.3 }}>
               <Link
                 href="/contact"
                 className="inline-block px-10 py-4 bg-[#FAF9F6] text-[#2B2B2B] font-semibold rounded-sm hover:bg-white transition-all duration-300 shadow-lg"
