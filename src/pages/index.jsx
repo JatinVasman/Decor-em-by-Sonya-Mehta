@@ -19,7 +19,6 @@ import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import AnimationWrapper from "../components/AnimationWrapper";
 import servicesData from "../data/services.json";
 import testimonialsData from "../data/testimonials.json";
-import portfolioData from "../data/portfolio.json";
 
 /**
  * Home Page
@@ -27,8 +26,6 @@ import portfolioData from "../data/portfolio.json";
  * Luxury Interior Design & Renovation - Houston, Texas
  */
 export default function Home() {
-  const featuredProjects = portfolioData.filter((p) => p.featured).slice(0, 4);
-
   const processSteps = [
     {
       icon: MessageSquare,
@@ -268,66 +265,6 @@ export default function Home() {
                 <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Featured Projects Section */}
-      <section className="py-32 bg-background">
-        <div className="container-custom">
-          <SectionHeader
-            overline="Portfolio"
-            title="Featured Projects"
-            subtitle="Explore our collection of transformative designs across Houston."
-            align="center"
-            className="mb-20"
-          />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {featuredProjects.map((project, index) => (
-              <AnimationWrapper
-                key={project.id}
-                animation="fade-up"
-                delay={index * 0.1}
-              >
-                <Link
-                  href={`/portfolio#${project.category}`}
-                  className="group block"
-                >
-                  <div className="relative aspect-[4/3] rounded-xl overflow-hidden">
-                    <Image
-                      src={project.images[0]}
-                      alt={project.title}
-                      fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark/80 via-dark/20 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500" />
-                    <div className="absolute inset-0 bg-accent/0 group-hover:bg-accent/20 transition-all duration-500" />
-
-                    <div className="absolute bottom-0 left-0 right-0 p-8 text-white transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
-                      <h3 className="heading-lg mb-2">{project.title}</h3>
-                      <p className="body-base text-white/90 mb-1">
-                        {project.location}
-                      </p>
-                      <p className="body-sm text-white/70">
-                        {project.description}
-                      </p>
-                    </div>
-                  </div>
-                </Link>
-              </AnimationWrapper>
-            ))}
-          </div>
-
-          <div className="text-center mt-16">
-            <Link
-              href="/portfolio"
-              className="btn-primary inline-flex items-center group"
-            >
-              View All Projects
-              <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
-            </Link>
           </div>
         </div>
       </section>
