@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import Image from "next/image";
+import Link from "next/link";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
 
 /**
  * HeroSection Component
  * Elegant hero section with parallax and animations
- * 
+ *
  * @param {Object} props
  * @param {string} props.title - Main hero title
  * @param {string} props.subtitle - Hero subtitle
@@ -26,32 +26,19 @@ const HeroSection = ({
   subtitle,
   description,
   image,
-  primaryCTA = 'Start Your Project',
-  primaryLink = '/contact',
+  primaryCTA = "Start Your Project",
+  primaryLink = "/contact",
   secondaryCTA,
   secondaryLink,
   overlay = true,
-  height = 'min-h-screen'
+  height = "min-h-screen",
 }) => {
   return (
-    <section className={`relative ${height} flex items-center justify-center overflow-hidden`}>
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
-          priority
-          sizes="100vw"
-          quality={90}
-        />
-        
-        {/* Overlay */}
-        {overlay && (
-          <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-dark/70" />
-        )}
-      </div>
+    <section
+      className={`relative ${height} flex items-center justify-center overflow-hidden`}
+    >
+      {/* Background Gradient */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-dark via-dark/95 to-dark/90" />
 
       {/* Content */}
       <div className="relative z-10 container-custom text-center text-white px-4">
@@ -67,7 +54,7 @@ const HeroSection = ({
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="overline text-accent mb-6"
+              className="overline text-white mb-6"
             >
               {subtitle}
             </motion.div>
@@ -89,7 +76,7 @@ const HeroSection = ({
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
-              className="body-xl text-white/90 mb-12 max-w-2xl mx-auto"
+              className="body-xl text-accent mb-12 max-w-2xl mx-auto"
             >
               {description}
             </motion.p>
@@ -102,7 +89,7 @@ const HeroSection = ({
             transition={{ duration: 0.8, delay: 0.9 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Link 
+            <Link
               href={primaryLink}
               className="btn-primary inline-flex items-center group"
             >
@@ -111,7 +98,7 @@ const HeroSection = ({
             </Link>
 
             {secondaryCTA && secondaryLink && (
-              <Link 
+              <Link
                 href={secondaryLink}
                 className="btn-secondary border-white text-white hover:bg-white hover:text-dark"
               >

@@ -90,17 +90,8 @@ export default function Portfolio() {
 
       {/* Hero Section */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero/portfolio.jpg"
-            alt="Portfolio collage of interior designs"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-dark/70 via-dark/50 to-dark/70" />
-        </div>
+        {/* Background Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/95 to-dark/90" />
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
@@ -113,7 +104,7 @@ export default function Portfolio() {
             Where Vision Meets Reality
           </motion.h1>
           <motion.p
-            className="body-xl text-[#FAF9F6]/90 max-w-3xl mx-auto"
+            className="body-xl text-accent max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

@@ -82,10 +82,10 @@ export default function Home() {
             <AnimationWrapper animation="fade-up">
               <div className="relative aspect-[3/4] rounded-sm overflow-hidden">
                 <Image
-                  src="/images/team/sonya-mehta.jpg"
+                  src="/images/hero/sonya_mehta_home.jpeg"
                   alt="Sonya Mehta - Interior Designer"
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-700"
+                  className="object-contain hover:scale-105 transition-transform duration-700"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
