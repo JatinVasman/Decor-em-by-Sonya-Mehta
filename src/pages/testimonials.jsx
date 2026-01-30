@@ -221,24 +221,6 @@ export default function Testimonials() {
                   <div key={testimonial.id} className="w-full flex-shrink-0 px-2">
                     <div className="bg-[#FAF9F6] p-8 md:p-12 rounded-lg shadow-lg border border-[#E4DED7]">
                       <div className="flex flex-col items-center text-center">
-                        {/* Client Image */}
-                        <div className="flex-shrink-0 mb-6">
-                          <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden bg-[#E4DED7] ring-4 ring-[#C9A76F]/20">
-                            {testimonial.image ? (
-                              <Image
-                                src={testimonial.image}
-                                alt={testimonial.name}
-                                fill
-                                className="object-cover"
-                              />
-                            ) : (
-                              <div className="w-full h-full flex items-center justify-center text-[#C9A76F] text-3xl font-serif font-semibold">
-                                {testimonial.name.charAt(0)}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-
                         {/* Content */}
                         <div className="flex-1">
                           {/* Stars */}

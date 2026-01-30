@@ -38,7 +38,6 @@
       "/images/bathrooms/Copy of IMG-20251216-WA0029.jpg",
       "/images/bathrooms/Copy of IMG_0178.PNG",
       "/images/bathrooms/Copy of IMG_0340.PNG",
-      "/images/bathrooms/Copy of IMG_0344.PNG",
       "/images/bathrooms/Copy of IMG_0883.PNG",
       "/images/bathrooms/Copy of IMG_0896.PNG",
       "/images/bathrooms/Copy of IMG_0988.PNG",
@@ -87,7 +86,6 @@
     "description": "Contemporary living space",
     "images": [
       "/images/living/Copy of file_000000006fe472099466664a6a4c22a3.png",
-      "/images/living/Copy of file_000000007e7061f79065b67cf0cc8afe.png",
       "/images/living/Copy of file_00000000be2072089d679ece8e5f3808.png",
       "/images/living/Copy of file_00000000bf4061f789c73453e72e4886.png",
       "/images/living/file_00000000431071fa85047e3a772d4ced.png",
@@ -110,5 +108,24 @@
     ],
     "featured": false,
     "tags": ["housepaint"]
+  },
+  {
+    "id": "dining-1",
+    "category": "dining",
+    "title": "Dining Room Design 1",
+    "location": "Houston",
+    "year": 2024,
+    "description": "Elegant dining space transformation",
+    "images": [
+      "/images/Dining/Copy of IMG_2113.jpg",
+      "/images/Dining/Copy of IMG_6545.jpg",
+      "/images/Dining/Copy of IMG_6634.jpg",
+      "/images/Dining/Copy of IMG_6635.jpg",
+      "/images/Dining/Copy of IMG_7814.PNG",
+      "/images/Dining/IMG_1010.PNG",
+      "/images/Dining/IMG_1016.PNG"
+    ],
+    "featured": false,
+    "tags": ["dining"]
   }
 ]

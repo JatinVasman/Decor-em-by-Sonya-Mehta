@@ -165,12 +165,12 @@ export default function Portfolio() {
                 className="group cursor-pointer"
                 onClick={() => setSelectedIndex(globalIndex)}
               >
-                <div className="relative aspect-[4/3] overflow-hidden rounded-sm">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-sm bg-[#F5F5F5]">
                   <Image
                     src={image}
                     alt={`${filter} design`}
                     fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                    className="object-contain transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     loading="lazy"
                   />
