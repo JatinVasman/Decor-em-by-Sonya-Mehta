@@ -186,8 +186,8 @@ export default function Home() {
           <div className="space-y-16 max-w-5xl mx-auto">
             <AnimationWrapper animation="fade-up">
               <BeforeAfterSlider
-                beforeImage="/images/kitchens/kitchen-before.jpg"
-                afterImage="/images/kitchens/kitchen-1.jpg"
+                beforeImage="/images/Before-after/Kitchen/Before.webp"
+                afterImage="/images/Before-after/Kitchen/after.webp"
                 title="Modern Kitchen Renovation - River Oaks"
                 initialPosition={50}
               />
@@ -195,8 +195,8 @@ export default function Home() {
 
             <AnimationWrapper animation="fade-up" delay={0.2}>
               <BeforeAfterSlider
-                beforeImage="/images/bathrooms/bathroom-before.jpg"
-                afterImage="/images/bathrooms/bathroom-1.jpg"
+                beforeImage="/images/Before-after/Bathroom/Before_.webp"
+                afterImage="/images/Before-after/Bathroom/Final Staged_.webp"
                 title="Luxury Bathroom Makeover - Memorial"
                 initialPosition={50}
               />
@@ -204,9 +204,18 @@ export default function Home() {
 
             <AnimationWrapper animation="fade-up" delay={0.3}>
               <BeforeAfterSlider
-                beforeImage="/images/living/living-before.jpg"
-                afterImage="/images/living/living-1.jpg"
+                beforeImage="/images/Before-after/Living/Before.webp"
+                afterImage="/images/Before-after/Living/After.webp"
                 title="Living Room Transformation - The Heights"
+                initialPosition={50}
+              />
+            </AnimationWrapper>
+
+            <AnimationWrapper animation="fade-up" delay={0.4}>
+              <BeforeAfterSlider
+                beforeImage="/images/Before-after/Home/Before.jpg"
+                afterImage="/images/Before-after/Home/After.jpg"
+                title="Complete Home Makeover - Houston"
                 initialPosition={50}
               />
             </AnimationWrapper>
