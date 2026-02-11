@@ -188,7 +188,7 @@ export default function Home() {
               <BeforeAfterSlider
                 beforeImage="/images/Before-after/Kitchen/Before.webp"
                 afterImage="/images/Before-after/Kitchen/after.webp"
-                title="Modern Kitchen Renovation - River Oaks"
+                title="Modern Kitchen Renovation"
                 initialPosition={50}
               />
             </AnimationWrapper>
@@ -197,7 +197,7 @@ export default function Home() {
               <BeforeAfterSlider
                 beforeImage="/images/Before-after/Bathroom/Before_.webp"
                 afterImage="/images/Before-after/Bathroom/Final Staged_.webp"
-                title="Luxury Bathroom Makeover - Memorial"
+                title="Luxury Bathroom Makeover"
                 initialPosition={50}
               />
             </AnimationWrapper>
@@ -206,7 +206,7 @@ export default function Home() {
               <BeforeAfterSlider
                 beforeImage="/images/Before-after/Living/Before.webp"
                 afterImage="/images/Before-after/Living/After.webp"
-                title="Living Room Transformation - The Heights"
+                title="Living Room Transformation"
                 initialPosition={50}
               />
             </AnimationWrapper>
@@ -215,7 +215,7 @@ export default function Home() {
               <BeforeAfterSlider
                 beforeImage="/images/Before-after/Home/Before.jpg"
                 afterImage="/images/Before-after/Home/After.jpg"
-                title="Complete Home Makeover - Houston"
+                title="Complete Home Makeover"
                 initialPosition={50}
               />
             </AnimationWrapper>
